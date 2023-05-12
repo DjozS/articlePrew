@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background:hsl(210, 46%, 95%);
+   font-family: 'Manrope', sans-serif;
+}
+main{
+    display:flex;
+    width:720px;
+    height:290px;
+    background: white;
+    border-radius: 10px;
+}
+.container1{
+    background-image: url("images/drawers.jpg");
+    background-size: cover;
+    width:300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    max-width:425px;
+    padding:35px;
+}
+.nameDiv{
+    display:flex;
+    margin-top:20px;
+}
+.nameDate{
+    display: flex;
+    flex-direction: column;
+    padding-top:5px;
+    margin-right:70px;
+}
+#avatar{
+    width:50px;
+    border-radius: 50%;
+    margin-right:20px;
+}
+#date{
+    opacity:0.8;
+}
+h1{
+    font-size:21px;
+    color:hsl(217, 19%, 35%);
+    margin-bottom:15px;
+}
+h2{
+    font-size: 16px;
+    color:hsl(217, 19%, 35%);
+    font-weight:600;
+}
+p{
+    font-size: 13px;
+    color:hsl(214, 17%, 51%);
+}
+.btnShare{
+    background:hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-left:20px;
+    margin-top:10px;
+}
+.share{
+    width:200px;
+    background: hsl(217, 19%, 35%);
+    height:50px;
+    border-radius: 10px;
+    display:none;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 5px 5px hsl(217, 19%, 35%);
+    position: absolute;
+    top:52%;
+    left:64%;
+}
+i#shareIcon{
+    filter:invert(100%)
+}
+#share{
+    letter-spacing: 4px;
+    color: hsl(210, 46%, 95%);
+    opacity:0.5;
+    padding-top:5px;
+    font-weight: 300;
+}
+@media(max-width:500px){
+    body{
+        min-height:70vh;
+    }
+    main{
+        display:flex;
+        flex-direction:column;
+        width:400px;
+    }
+    .container1{
+        min-height:100%;
+        width:400px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .container2{
+        background: white;
+    }
+    .nameDiv{
+        height:50px;
+    }
+    .share{
+        position: absolute;
+        top:96%;
+        left: 9%;
+        height:70px;
+        width:400px;
+        background-image: url("images/icon-share.svg");
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: 90%;
+        display:none;
+        justify-content: start;
+        padding-left:30px;
+    }
+    #icons{
+        margin-left:20px;
+        width:27px;
+    }
+    #share{
+        letter-spacing: 5px;
+        font-size:16px;
+        color: hsl(210, 46%, 95%);
+        opacity:0.5;
+        padding-top:5px;
+        font-weight: 300;
+    }
+}
